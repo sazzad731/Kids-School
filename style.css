@@ -146,6 +146,10 @@
     display: block;
   }
 
+  .container > nav .logo h5{
+    display: none;
+  }
+
   .container > nav button,
   .container > nav ul {
     display: none;
@@ -175,6 +179,7 @@
   .hero-row button{
     margin-bottom: 20px;
     padding: 6px 24px;
+    line-height: 30px;
   }
 
   .hero-row > img {
