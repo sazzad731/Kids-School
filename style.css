@@ -6,3 +6,99 @@
   box-sizing: border-box;
   font-family: "Quicksand", serif;
 }
+
+/* shared css */
+
+.container{
+  max-width: 1542px;
+  margin: 0 auto;
+}
+
+
+/* Navbar section */
+.container > nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.container > nav .logo{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.container > nav .logo h5{
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container > nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.container > nav ul li{
+  list-style: none;
+}
+
+.container > nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container > nav ul li .colorA{
+  color: #FEA301;
+  font-weight: 700;
+}
+
+.container > nav ul li .colorB{
+  color: #01ACFD;
+}
+
+.container > nav ul li .colorC{
+  color: #05D4DF;
+}
+
+.container > nav ul li .colorD{
+  color: #5D58EF;
+}
+
+.container > nav button{
+  padding: 10px 60px;
+  background-color: #FEA301;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.container > nav > .menu-bar{
+  display: none;
+  font-size: 30px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .container{
+    padding: 0px 16px;
+  }
+
+  /* navbar section */
+  .container > nav > .menu-bar{
+    display: block;
+  }
+
+  .container > nav button, .container > nav ul{
+    display: none;
+  }
+}
