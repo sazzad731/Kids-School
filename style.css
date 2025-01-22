@@ -234,6 +234,122 @@ h2{
 
 
 
+
+
+/* Our Stories section */
+.stories-bg{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(254, 161, 1, 30%)), url("assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 60px 0;
+}
+
+.stories-bg > .container > h2{
+  text-align: center;
+}
+
+.stories-bg > .container > .stories-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.stories-bg > .container > .stories-box .storie1{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.stories-bg > .container > .stories-box .stories{
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.stories-bg > .container > .stories-box .stories .info{
+  padding: 0 38px;
+}
+
+.stories-bg > .container > .stories-box .stories img{
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.stories-bg > .container > .stories-box .storie1 .info span{
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 28px;
+  padding: 15px 18px;
+  background: #3CD8E8;
+  color: #fff;
+  border-radius: 47px;
+  position: relative;
+  top: -20px;
+}
+
+.stories-bg > .container > .stories-box .storie1 .info h4{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38px;
+  margin: 50px 0;
+}
+
+.stories-bg > .container > .stories-box .storie1 .info p{
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 34px;
+  color: #666666;
+}
+
+.stories-bg > .container > .stories-box .storie2 .info span,
+.stories-bg > .container > .stories-box .storie3 .info span,
+.stories-bg > .container > .stories-box .storie4 .info span,
+.stories-bg > .container > .stories-box .storie5 .info span{
+  font-family: "Raleway", serif;
+  padding: 10px 19px;
+  border-radius: 47.93px;
+  background: #95B226;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  top: -17px;
+}
+
+.stories-bg > .container > .stories-box .storie3 .info span{
+  background: #5D58F0;
+}
+
+.stories-bg > .container > .stories-box .storie2 .info h4,
+.stories-bg > .container > .stories-box .storie3 .info h4,
+.stories-bg > .container > .stories-box .storie4 .info h4,
+.stories-bg > .container > .stories-box .storie5 .info h4{
+  margin: 40px 0px 33px 0px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.btn-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stories-bg > .container > .btn-box button{
+  padding: 10px 61px;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   h2{
     font-size: 26px;
@@ -250,6 +366,10 @@ h2{
   }
 
   /* navbar section */
+  .container > nav{
+    margin: 12px 0px;
+  }
+  
   .container > nav > .menu-bar {
     display: block;
   }
@@ -297,6 +417,10 @@ h2{
 
   /* Standard Curriculum section */
   .bg-img .card-box{
+    margin-bottom: 20px;
+  }
+  
+  .bg-img .card-box{
     flex-direction: column;
   }
 
@@ -314,6 +438,48 @@ h2{
 
   .arrows{
     display: none;
+  }
+
+
+
+
+  /* Our Stories section */
+  .stories-bg{
+    padding: 40px 0;
+  }
+
+  .stories-bg > .container > .stories-box{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 11.39px;
+  }
+  
+  .stories-bg > .container > .stories-box .storie1{
+    display: none;
+  }
+
+  .stories-bg > .container > .stories-box .stories .info{
+    padding: 0 22px;
+  }
+
+  .stories-bg > .container > .stories-box .storie2 .info span, 
+  .stories-bg > .container > .stories-box .storie3 .info span, 
+  .stories-bg > .container > .stories-box .storie4 .info span, 
+  .stories-bg > .container > .stories-box .storie5 .info span{
+    font-size: 9.13px;
+    padding: 5px 11px;
+  }
+
+  .stories-bg > .container > .stories-box .storie2 .info h4, 
+  .stories-bg > .container > .stories-box .storie3 .info h4, 
+  .stories-bg > .container > .stories-box .storie4 .info h4, 
+  .stories-bg > .container > .stories-box .storie5 .info h4{
+    font-size: 12px;
+    line-height: 17px;
+    margin: 6px 0px 19px 0px;
+  }
+
+  .stories-bg > .container > .stories-box{
+    margin-bottom: 20px;
   }
 }
 
